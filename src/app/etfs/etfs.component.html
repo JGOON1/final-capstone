@@ -1,6 +1,15 @@
-<p>etfs works!</p>
-<p>list of ETFS</p>
-<div *ngFor="let etf of etfs">
-    <p>{{etf.name}}</p>
-    <p>{{etf.symbol}}</p>
-</div>
+
+<mat-accordion multi="true" *ngFor="let etf of etfs">
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <p>{{etf.name}}</p>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Symbol: {{etf.symbol}}</p>
+        <p>Index: {{etf.index}}</p>
+        <p>Currency: {{etf.currency}}</p>
+        <p>Exchange: {{etf.exchange}}</p>
+    </mat-expansion-panel>
+</mat-accordion>
+

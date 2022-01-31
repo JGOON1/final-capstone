@@ -1,4 +1,19 @@
-<a routerLink="/etfs">First Component</a>
-
+<mat-toolbar class="header"  >
+    <mat-toolbar-row>
+      <h1>Falcon Investments</h1>
+      <span class="menu-spacer"></span>
+      <div class="menu-buttons">
+        <a mat-button routerLink="'/accounts'"> Login </a>
+        <a mat-button routerLink="'/create-account'"> Signup </a>
+        <a mat-button routerLink="/etfs"> ETFs</a>
+        <a mat-button routerLink="/dashboard"> Dashboard</a>
+        <a mat-button routerLink="/advisor"> Advisor</a>
+      </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <span style="font-size: 12px;">Falcon Investments will help with your future</span>
+    </mat-toolbar-row>
+</mat-toolbar>
 
 <router-outlet></router-outlet>
+
