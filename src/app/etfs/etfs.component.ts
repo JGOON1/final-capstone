@@ -19,4 +19,8 @@ export class EtfsComponent implements OnInit {
     })
   }
 
+  nextStep() {
+    console.log("hello")
+  }
+
 }

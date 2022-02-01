@@ -1,9 +1,9 @@
 export interface Etf {
     id: number;
-    symbol: string;
+    ticker: string;
     name: string;
-    index: string
-    currency: string,
-    exchange: string,
-    userId: number
+    asset: string
+    price: number,
+    portfolio: string,
+    userId?: number
 }

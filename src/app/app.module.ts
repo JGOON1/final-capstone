@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { EtfsComponent } from './etfs/etfs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EtfsComponent
+    EtfsComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
