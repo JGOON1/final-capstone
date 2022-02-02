@@ -3,5 +3,4 @@ export interface Article{
     description: string;
     url: string;
     image_url: string;
-    source: string;
 }
