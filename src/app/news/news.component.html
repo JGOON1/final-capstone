@@ -1,5 +1,18 @@
-<!-- <div class="article-container">
+<div class="article-container">
     <mat-card class="article-card" *ngFor="let article of articles">
+        <mat-card-title-group>
+          <mat-card-title>{{article.title}}</mat-card-title>
+          <!-- <mat-card-subtitle>Small</mat-card-subtitle> -->
+          <img mat-card-md-image src="{{article.image_url}}" >
+        </mat-card-title-group>
+        <mat-card-content>
+            {{article.description}}
+        </mat-card-content>
+        <a href="{{article.url}}">
+            <button mat-button>Read Article</button>
+        </a>
+    </mat-card>
+    <!-- <mat-card class="article-card" *ngFor="let article of articles">
         <mat-card-header>
             <mat-card-title>
                 {{article.title}}
@@ -12,62 +25,46 @@
             <a href="{{article.url}}">
                 <button mat-button>Read Article</button>
             </a> 
+    </mat-card> -->
+</div>
+
+<!-- <div class="article-container">
+    <mat-card class="article-card">
+        <mat-card-title-group>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+        </mat-card-title-group>
+        <mat-card-content>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minus, veritatis error quia recusandae perferendis corrupti deleniti non possimus nam similique ipsum eum? Fugiat necessitatibus omnis explicabo enim praesentium perspiciatis.
+        </mat-card-content>
+        <a href="">
+            <button mat-button>Read Article</button>
+        </a>
+    </mat-card>
+
+    <mat-card class="article-card">
+        <mat-card-title-group>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+        </mat-card-title-group>
+        <mat-card-content>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minus, veritatis error quia recusandae perferendis corrupti deleniti non possimus nam similique ipsum eum? Fugiat necessitatibus omnis explicabo enim praesentium perspiciatis.
+        </mat-card-content>
+        <a href="">
+            <button mat-button>Read Article</button>
+        </a>
+    </mat-card>
+
+    <mat-card class="article-card">
+        <mat-card-title-group>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+        </mat-card-title-group>
+        <mat-card-content>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minus, veritatis error quia recusandae perferendis corrupti deleniti non possimus nam similique ipsum eum? Fugiat necessitatibus omnis explicabo enim praesentium perspiciatis.
+        </mat-card-content>
+        <a href="">
+            <button mat-button>Read Article</button>
+        </a>
     </mat-card>
 </div> -->
-
-<div class="article-container">
-    <mat-card class="article-card">
-        <mat-card-header>
-            <mat-card-title>
-                test title
-            </mat-card-title>
-        </mat-card-header>
-            <img mat-card-image src="https://assets.dragoart.com/images/78179_502/how-to-draw-a-falcon-for-kids-step-7_5e4c9621543100.37257893_44268_3_3.jpg">
-            <mat-card-content>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil porro repellendus et aliquam deserunt tenetur aspernatur at totam! Distinctio ad reprehenderit officia pariatur, repellat enim suscipit ipsa consequuntur fugiat corrupti!
-            </mat-card-content>
-            <mat-card-actions>
-               <a href="">
-                   <button mat-button>Read Article</button>
-               </a> 
-            </mat-card-actions>
-    </mat-card>
-
-    <mat-card class="article-card">
-        <mat-card-header>
-            <mat-card-title>
-                test title22
-            </mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="https://media.istockphoto.com/vectors/engraving-of-stylized-hawk-vector-id1022804954?k=20&m=1022804954&s=612x612&w=0&h=VQCMKTf59ZTyT8WeCQa60fpFq8FmD50qQmc6aPpPcWw=" alt="falcon">
-        <mat-card-content>
-          <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illum harum corporis beatae repudiandae minima velit, eum ea excepturi autem, laudantium blanditiis nemo nostrum. Totam dolores animi repudiandae reprehenderit quaerat?    
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-            <a href="">
-                <button mat-button>Read Article</button>
-            </a>
-          </mat-card-actions>
-    </mat-card>
-
-    <mat-card class="article-card">
-        <mat-card-header>
-            <mat-card-title>
-                test title22
-            </mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="https://media.istockphoto.com/vectors/engraving-of-stylized-hawk-vector-id1022804954?k=20&m=1022804954&s=612x612&w=0&h=VQCMKTf59ZTyT8WeCQa60fpFq8FmD50qQmc6aPpPcWw=" alt="falcon">
-        <mat-card-content>
-          <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, illum harum corporis beatae repudiandae minima velit, eum ea excepturi autem, laudantium blanditiis nemo nostrum. Totam dolores animi repudiandae reprehenderit quaerat?    
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-            <a href="">
-                <button mat-button>Read Article</button>
-            </a>
-          </mat-card-actions>
-    </mat-card>
-</div>
