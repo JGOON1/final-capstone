@@ -1,11 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ArticleService {
-  url:String = "https://api.marketaux.com/v1/news/sources";
+  
+  constructor(private http: HttpClient) { }
 
-  constructor(private Http: HttpClient) { }
+  getArticles(): Observable<any> {
+    return this.http.get(`https://api.marketaux.com/v1/news/all?entity_types=etf,index&api_token=trUAuJexQauhRBKLARofBVuQpML327HZHMb9TaV6&language=en`)
+  }
 }
