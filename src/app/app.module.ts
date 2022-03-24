@@ -8,12 +8,14 @@ import { EtfsComponent } from './etfs/etfs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NewsComponent } from './news/news.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EtfsComponent,
-    NewsComponent
+    NewsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
